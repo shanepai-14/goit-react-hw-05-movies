@@ -80,8 +80,8 @@ const MovieDetails = () => {
               </div>
               <nav>
                     <ul style={{display:'flex',gap:"20px",color:'black'}}>
-                        <li><Link to={`cast`}>Cast</Link></li>
-                        <li><Link to={`reviews`}>Reviews</Link></li>
+                        <li style={{color:'black'}}><Link to={`cast`}>Cast</Link></li>
+                        <li style={{color:'black'}}><Link to={`reviews`}>Reviews</Link></li>
                     </ul>
                 </nav>
                 
