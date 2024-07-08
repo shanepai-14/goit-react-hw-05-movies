@@ -1,0 +1,146 @@
+
+.vote {
+  color: #f7f7f7;
+  background-color: var(--orange);
+  border-radius: 5px;
+  padding: 1px 10px;
+  color: var(--white);
+  text-align: center;
+}
+
+
+
+.modal-movie {
+  animation: Opacity 1.5s ease alternate;
+  background-color: var(--white);
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+  // border: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  width: 100%;
+  padding: 48px 20px;
+
+
+  .img-container {
+    flex: 1 1;
+    padding-bottom: 30px;
+    .image {
+      border-radius: 5px;
+    }
+  }
+
+  .content {
+    flex: 1 1;
+    // width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 500;
+  }
+  .movie-overview {
+    line-height: 20px;
+  }
+
+  .movie-title {
+    // width: 100%;
+    color: var(--black);
+    font-size: 50px;
+    padding-bottom: 20px;
+    line-height: normal;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .left-right-container {
+    // display: flex;
+
+    .property {
+      padding-left: 0;
+      text-align: left;
+      color: #8c8c8c;
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16px;
+      // width: 108px;
+
+      .left-side {
+        // display: flex;
+        // width: 108px;
+        // height: 16px;
+        flex: 1 1;
+      }
+
+      li {
+        display: flex;
+        padding-bottom: 10px;
+        justify-content: space-between;
+        align-items: center;
+
+        .votes-right-side {
+          padding-left: 40px;
+        }
+        .right-side {
+          // padding-left: 40px;
+          color: #000;
+          font-family: Roboto;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          flex: 1 1;
+
+          i {
+            color: #8c8c8c;
+            padding-right: 4px;
+            font-style: normal;
+          }
+        }
+      }
+     
+      .votes {
+        color: var(--black);
+        font-weight: 500;
+        padding: 1px 5px;
+        text-align: center;
+        background-color: #f7f7f7;
+        border-radius: 5px;
+      }
+    }
+  }
+  .about {
+    color: #000;
+    text-transform: uppercase;
+    padding-top: 20px;
+    .about-title {
+      padding-bottom: 20px;
+    }
+
+    .overview-container {
+      padding-bottom: 20px;
+      .movie-overview {
+        text-transform: none;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    // min-width: 618px;
+    flex-flow: row;
+    align-items: flex-start;
+    gap: 30px;
+ 
+    padding: 42px 28px;
+
+    .img-container {
+      padding-bottom: 0;
+    }
+ 
+  
+  }
+
+
+
+
+}
