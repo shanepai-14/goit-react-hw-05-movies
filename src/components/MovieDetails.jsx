@@ -79,7 +79,7 @@ const MovieDetails = () => {
                 <p className="movie-overview">{movieDetails.overview}</p>
               </div>
               <nav>
-                    <ul style={{display:'flex',gap:"20px"}}>
+                    <ul style={{display:'flex',gap:"20px",color:'black'}}>
                         <li><Link to={`cast`}>Cast</Link></li>
                         <li><Link to={`reviews`}>Reviews</Link></li>
                     </ul>
